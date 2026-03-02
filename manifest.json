@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Mute Other Tabs",
+  "version": "1.0.0",
+  "description": "Mute/unmute tabs with buttons or keyboard shortcuts.",
+  "permissions": [
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "commands": {
+    "mute_all_tabs": {
+      "suggested_key": {
+        "default": "Ctrl + Shift + 7"
+      },
+      "description": "Mute all tabs"
+    },
+    "solo_current_tab": {
+      "suggested_key": {
+        "default": "Ctrl + Shift + 8"
+      },
+      "description": "Mute all except current tab (Solo)"
+    },
+    "unmute_all_tabs": {
+      "suggested_key": {
+        "default": "Ctrl + Shift + 9"
+      },
+      "description": "Unmute all tabs"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
